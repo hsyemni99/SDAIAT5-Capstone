@@ -1,0 +1,6 @@
+Weight
+Systolic blood pressure
+Diastolic blood pressure
+Cholesterol levels. (1: Normal, 2: Above Normal, 3: Well Above Normal).
+Age in years
+Body Mass Index
