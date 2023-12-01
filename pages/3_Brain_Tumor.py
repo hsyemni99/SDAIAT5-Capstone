@@ -16,7 +16,7 @@ column1, column2 = st.columns(2)
 # Column 1
 with column1:
 
-    st.markdown("# Pneumonia Diagnosis")
+    st.markdown("# Brain Tumor Diagnosis")
 #st.sidebar.header("Pneumonia Diagnosis2")
     st.write(
     "This demo illustrates the capabilities of our deep learning model to predict whether a   \n" 
@@ -37,7 +37,7 @@ with column1:
 4. **Personality or Mood Changes**:
 \t- Irritability, depression, or other unexplained changes in mood or behavior.
 
-##### Brain Tumors can be classified into different types but are not limited to the following:
+### Brain Tumors can be classified into different types but are not limited to the following:
 - **Gliomas Tumor**: tumors that form in glial cells in the brain and spinal cord.
 - **Meningioma Tumor**: a tumor that arises from the meninges — the membranes that surround the brain and spinal cord. 
 - **Pituitary Tumor**: unusual growths that develop in the pituitary gland.""")

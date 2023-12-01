@@ -30,7 +30,7 @@ with column1:
 - Shortness of breath: Difficulty breathing, especially during physical activities.
 - Chest pain: This can range from mild to severe and may worsen when breathing deeply or coughing.
 - Fatigue: Feeling excessively tired or weak.
-##### Pneumonia can be classified into different types based on the causative agent:
+### Pneumonia can be classified into different types based on the causative agent:
 - **Bacterial Pneumonia**: Caused by various bacteria, including Streptococcus pneumoniae. This type can be severe, especially in older adults and those with weakened immune systems.
 - **Viral Pneumonia**: Caused by viruses such as influenza (flu) or respiratory syncytial virus (RSV). Viral pneumonia is often milder than bacterial pneumonia.
 - **Mycoplasma Pneumonia**: Caused by Mycoplasma pneumoniae, this type is usually milder than bacterial pneumonia and is sometimes referred to as "walking pneumonia."

@@ -33,7 +33,7 @@ with column1:
 ##### 2. Extrapulmonary Tuberculosis:
 - Tuberculosis can affect other organs, such as the kidneys, spine, and brain, leading to a range of symptoms
 depending on the affected area.
-### Pneumonia can be classified into different types based on the causative agent:
+### Tuberculosis can be classified into different types based on the stage:
 - **Primary TB infection**: The first stage is called the primary infection. Immune system cells find and capture the germs. The immune system may completely destroy the germs. But some captured germs may still survive and multiply.
 - **Latent TB infection**: Primary infection is usually followed by the stage called latent TB infection. Immune system cells build a wall around lung tissue with TB germs. The germs can't do any more harm if the immune system keeps them under control.
 - **Active TB disease**: Active TB disease happens when the immune system can't control an infection. Germs cause disease throughout the lungs or other parts of the body.""")
