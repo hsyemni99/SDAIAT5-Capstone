@@ -1,5 +1,5 @@
 How to run the project:
-
+Install Python 3.10.13
 in terminal
 "cd path/to/project/directory/"
 "pip install -r requirements.txt"
