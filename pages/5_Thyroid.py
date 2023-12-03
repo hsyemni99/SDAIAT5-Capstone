@@ -71,7 +71,6 @@ with open(model_path, 'rb') as f:
 with open(feature_list, 'rb') as g:
     line = g.readline()
     features_list = [word.decode('utf-8') for word in line.split()]
-    print(features_list)
     
 def preprocessinput(inputdata):
     if inputdata[1] == 'Male':
@@ -99,7 +98,6 @@ with column2:
     
     with st.form("Patient Data"):
         st.write("Enter the following data")
-        featuresofmodel = []
         input1 = st.number_input('Age in years', min_value=0, max_value=100) # Integer
         input2 = st.selectbox(label='Sex', options=['Male', 'Female']) # F - M
         input3 = st.selectbox(label='Is patient on thyeroxine', options=['Yes', 'No']) # Yes - No

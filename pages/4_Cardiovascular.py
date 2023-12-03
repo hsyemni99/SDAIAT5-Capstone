@@ -49,7 +49,6 @@ with open(model_path, 'rb') as f:
 with open(feature_list, 'rb') as g:
     line = g.readline()
     features_list = [word.decode('utf-8') for word in line.split()]
-    #features_list_new = list(features_list.split(' '))
     
 def preprocessinput(inputdata):
     if inputdata[3] == 'Normal':
@@ -73,7 +72,6 @@ with column2:
     
     with st.form("Patient Data"):
         st.write("Enter the following data")
-        featuresofmodel = []
         input1 = st.number_input('Weight')
         input2 = st.number_input('Systolic blood pressure')
         input3 = st.number_input('Diastolic blood pressure')

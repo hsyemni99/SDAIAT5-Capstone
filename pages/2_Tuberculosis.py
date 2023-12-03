@@ -62,6 +62,4 @@ with column2:
             st. image(image_file)
         except Exception as e:
             print(e)
-    else:
-        print("placeholder")
     
