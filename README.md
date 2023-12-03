@@ -14,7 +14,6 @@ source env-name/bin/activate
 For Anaconda:
 ```
 conda create --name env-name python=3.10
-
 ```
 ```
 conda activate env-name
