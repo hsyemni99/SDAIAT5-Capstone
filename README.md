@@ -2,16 +2,23 @@
 ### 1. Install Python 3.10
 
 ### 2. Create a new Python Environment using Python venv or Anaconda.
-###
-For Python:
+
+#### For Python:
 ```
 python -m venv env-name
 ```
+For Windows:
+```
+cd \path\to\your\virtualenv\
+```
+```
+.\Scripts\bin\activate
+```
+For Linux:
 ```
 source env-name/bin/activate
 ```
-###
-For Anaconda:
+#### For Anaconda:
 ```
 conda create --name env-name python=3.10
 ```
