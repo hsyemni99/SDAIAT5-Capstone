@@ -1,0 +1,3 @@
+https://www.kaggle.com/datasets/programmerrdai/pneumonia
+
+https://www.kaggle.com/datasets/iamsouravbanerjee/cause-of-deaths-around-the-world
