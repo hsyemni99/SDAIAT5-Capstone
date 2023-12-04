@@ -7,8 +7,8 @@ model_path = os.path.join('.', 'models', 'CVD', 'GradientBoost-0.1.0.pkl')
 features = ['Weight', 'Systolic blood pressure', 'Diastolic blood pressure', 'Cholesterol levels. (1: Normal, 2: Above Normal, 3: Well Above Normal).', 'Age in years', 'Body Mass Index']
 feature_list = os.path.join('.', 'models', 'CVD', 'CVDfeaturesformodel.txt')
 class_names = ['Negative', 'Positive']
-harmful = ['Negative']
-normal = ['Positive']
+harmful = ['Positive']
+normal = ['Negative']
 st.set_page_config(page_title="Cardiovascular Disease Diagnosis Demo",
                    layout="wide",
                    initial_sidebar_state="expanded")
@@ -64,7 +64,10 @@ def preprocessinput(inputdata):
 def predictionfrommodel(model, inputdata):
     processedinput = preprocessinput(inputdata)
     pred = model.predict(processedinput)
-    return class_names[pred[0]]
+    prob = model.predict_proba(processedinput)
+    prob = prob.max()
+    prob *= 100
+    return class_names[pred[0]], prob
 
 # Column 2
 with column2:
@@ -83,9 +86,10 @@ with column2:
 
         if submitted:
             input_features = [input1, input2 ,input3, input4, input5, input6]
-            pred = predictionfrommodel(CVDmodel, input_features)
+            pred, prob = predictionfrommodel(CVDmodel, input_features)
+            prob = round(prob, 2)            
             if pred in harmful:
                 prediction = f'<p style="color:Red; font-size: 20px;">{pred}</p>'
             if pred in normal:
                 prediction = f'<p style="color:Green; font-size: 20px;">{pred}</p>'
-            st.write(f'<p style="color:White; font-size: 20px;">Patient is</p>', prediction, unsafe_allow_html=True)
+            st.write(f'<p style="color:White; font-size: 20px;">Prediction is</p>', prediction, f'<p style="color:White; font-size: 20px;">with confidence of {prob}%</p>', unsafe_allow_html=True)

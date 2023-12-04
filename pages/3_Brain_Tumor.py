@@ -46,7 +46,9 @@ def prediction_decode(image):
     image = (np.expand_dims(image,0))
     predictions = loaded_model.predict(image, verbose=0)
     pred=np.argmax(predictions)
-    return class_names[pred]
+    prob = predictions.max()
+    prob = prob * 100
+    return class_names[pred], prob
 loaded_model = tf.keras.models.load_model(model_path)
 
 
@@ -57,12 +59,13 @@ with column2:
     if image_file is not None:
         try:
             image_file = Image.open(image_file)
-            pred = prediction_decode(image_file)
+            pred, prob = prediction_decode(image_file)
+            prob = round(prob, 2)            
             if pred in harmful:
                 prediction = f'<p style="color:Red; font-size: 20px;">{pred}</p>'
             if pred in normal:
                 prediction = f'<p style="color:Green; font-size: 20px;">{pred}</p>'
-            st.write(f'<p style="color:White; font-size: 20px;">Image Prediction is</p>', prediction, unsafe_allow_html=True)
+            st.write(f'<p style="color:White; font-size: 20px;">Image Prediction is</p>', prediction, f'<p style="color:White; font-size: 20px;">with confidence of {prob}%</p>', unsafe_allow_html=True)
             image_file = image_file.resize((600,545))
             st. image(image_file)
         except Exception as e:

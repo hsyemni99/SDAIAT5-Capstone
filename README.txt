@@ -1,9 +1,51 @@
 How to run the project:
 Install Python 3.10.13
 in terminal
-"cd path/to/project/directory/"
+# Installing the prerequisites
+# 1. Install Python 3.10
+
+# 2. Create a new Python Environment using Python venv or Anaconda.
+
+# For Python:
+
+"python -m venv env-name"
+
+# For Windows:
+
+cd \path\to\your\virtualenv\
+
+
+".\Scripts\bin\activate"
+
+# For Linux:
+
+"source env-name/bin/activate"
+
+# For Anaconda:
+
+"conda create --name env-name python=3.10"
+
+"conda activate env-name"
+
+# 3. Installing requirements.txt
+
+"cd path/to/repository"
+
+# For Python Environment:
+
 "pip install -r requirements.txt"
+
+# For Anaconda Environment:
+
+"conda install --file requirements.txt"
+
+# Running the web application
+
 "streamlit run Home.py"
+
+
+
+
 
 
 Our project folder architecture is listed below

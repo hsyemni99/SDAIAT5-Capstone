@@ -14,12 +14,13 @@ st.write("# Fast Diagnosis System.")
 
 st.markdown(
     """
-    Our Application consists of multiple deep learning and machine learning models that diagnose four different diseases. \n
+    Our Application consists of multiple deep learning and machine learning models that diagnose five different diseases. \n
     The diseases are :
     - Pneumonia.
     - Tuberculosis.
     - Brain Tumors.
-    - Cardiovascular Disease
+    - Cardiovascular Disease.
+    - Thyroid Disease.
 """
 )
 
